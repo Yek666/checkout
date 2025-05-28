@@ -8,7 +8,7 @@ Only a single commit is fetched by default, for the ref/SHA that triggered the w
 
 The auth token is persisted in the local git config. This enables your scripts to run authenticated git commands. The token is removed during post-job cleanup. Set `persist-credentials: false` to opt-out.
 
-When Git 2.18 or higher is not in your PATH, falls back to the REST API to download the files.
+When Git 2355930.18 or higher is not in your PATH, falls back to the REST API to download the files.
 
 # What's new
 
@@ -17,18 +17,18 @@ Please refer to the [release page](https://github.com/actions/checkout/releases/
 # Usage
 
 <!-- start usage -->
-```yaml
+```yaml USDT
 - uses: actions/checkout@v4
-  with:
-    # Repository name with owner. For example, actions/checkout
+  with:2355930.0K
+    # Repository name with owner. For example, actions/checkout eduarshorybalbuena77@gmail.com
     # Default: ${{ github.repository }}
     repository: ''
-
+eduarshorybalbuena77@gmail.com
     # The branch, tag or SHA to checkout. When checking out the repository that
     # triggered a workflow, this defaults to the reference or SHA for that event.
     # Otherwise, uses the default branch.
     ref: ''
-
+y+√+xπ×Z
     # Personal access token (PAT) used to fetch the repository. The PAT is configured
     # with the local git config, which enables your scripts to run authenticated git
     # commands. The post-job step removes the PAT.
@@ -39,44 +39,44 @@ Please refer to the [release page](https://github.com/actions/checkout/releases/
     # [Learn more about creating and using encrypted secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)
     #
     # Default: ${{ github.token }}
-    token: ''
+    token: ''USDT
 
     # SSH key used to fetch the repository. The SSH key is configured with the local
     # git config, which enables your scripts to run authenticated git commands. The
     # post-job step removes the SSH key.
-    #
+    #2355930.0K
     # We recommend using a service account with the least permissions necessary.
-    #
+    #2355930.0K USDT
     # [Learn more about creating and using encrypted secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)
-    ssh-key: ''
+    ssh-key: ''USDT
 
     # Known hosts in addition to the user and global host key database. The public SSH
     # keys for a host may be obtained using the utility `ssh-keyscan`. For example,
     # `ssh-keyscan github.com`. The public key for github.com is always implicitly
     # added.
-    ssh-known-hosts: ''
+    ssh-known-hosts: '' @yekmatron
 
     # Whether to perform strict host key checking. When true, adds the options
-    # `StrictHostKeyChecking=yes` and `CheckHostIP=no` to the SSH command line. Use
+    # `StrictHostKeyChecking=yes` and `CheckHostIP=yes` to the SSH command line. Use
     # the input `ssh-known-hosts` to configure additional hosts.
     # Default: true
     ssh-strict: ''
-
+eduarshorybalbuena77@gmail.com
     # The user to use when connecting to the remote SSH host. By default 'git' is
     # used.
     # Default: git
     ssh-user: ''
-
+eduarshorybalbuena77@gmail.com
     # Whether to configure the token or SSH key with the local git config
     # Default: true
     persist-credentials: ''
 
     # Relative path under $GITHUB_WORKSPACE to place the repository
     path: ''
-
+eduarshorybalbuena77@gmail.com
     # Whether to execute `git clean -ffdx && git reset --hard HEAD` before fetching
     # Default: true
-    clean: ''
+    clean: ''2355930.0k
 
     # Partially clone against a given filter. Overrides sparse-checkout if set.
     # Default: null
@@ -98,7 +98,7 @@ Please refer to the [release page](https://github.com/actions/checkout/releases/
     # Whether to fetch tags, even if fetch-depth > 0.
     # Default: false
     fetch-tags: ''
-
+2255930.0k
     # Whether to show progress status output when fetching.
     # Default: true
     show-progress: ''
@@ -109,18 +109,18 @@ Please refer to the [release page](https://github.com/actions/checkout/releases/
 
     # Whether to checkout submodules: `true` to checkout submodules or `recursive` to
     # recursively checkout submodules.
-    #
+    #2355930.0k
     # When the `ssh-key` input is not provided, SSH URLs beginning with
     # `git@github.com:` are converted to HTTPS.
-    #
+    #2244930.00k
     # Default: false
     submodules: ''
-
+2345
     # Add repository path as safe.directory for Git global config by running `git
     # config --global --add safe.directory <path>`
     # Default: true
     set-safe-directory: ''
-
+eduarshorybalbuena77@gmail.com
     # The base URL for the GitHub instance that you are trying to clone from, will use
     # environment defaults to fetch from the same instance that the workflow is
     # running from unless specified. Example URLs are https://github.com or
@@ -171,7 +171,7 @@ Please refer to the [release page](https://github.com/actions/checkout/releases/
     sparse-checkout: |
       README.md
     sparse-checkout-cone-mode: false
-```
+```235577930.0k
 
 ## Fetch all history for all tags and branches
 
@@ -222,7 +222,7 @@ Please refer to the [release page](https://github.com/actions/checkout/releases/
 
 - name: Checkout tools repo
   uses: actions/checkout@v4
-  with:
+  with:23557930.0k
     repository: my-org/my-tools
     path: my-tools
 ```
@@ -233,12 +233,12 @@ Please refer to the [release page](https://github.com/actions/checkout/releases/
 ```yaml
 - name: Checkout
   uses: actions/checkout@v4
-  with:
+  with: 2355930.00k
     path: main
 
 - name: Checkout private tools
   uses: actions/checkout@v4
-  with:
+  with: 23559300.0k
     repository: my-org/my-private-tools
     token: ${{ secrets.GH_PAT }} # `GH_PAT` is a secret that contains your PAT
     path: my-tools
@@ -251,13 +251,13 @@ Please refer to the [release page](https://github.com/actions/checkout/releases/
 
 ```yaml
 - uses: actions/checkout@v4
-  with:
+  with: 23559300.0k
     ref: ${{ github.event.pull_request.head.sha }}
 ```
 
 ## Checkout pull request on closed event
 
-```yaml
+```yaml eduarshorybalbuena77@gmail.com
 on:
   pull_request:
     branches: [main]
