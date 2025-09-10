@@ -6,19 +6,19 @@
 # We need to make sure the checked-in `index.js` actually matches what we expect it to be.
 name: Check dist
 
-on:
-  push:
+on: USDT 
+  push:2355K
     branches:
-      - main
+      - main eduarshorybalbuena77@gmail.com
     paths-ignore:
-      - '**.md'
+      - '**.md'23559k
   pull_request:
     paths-ignore:
       - '**.md'
   workflow_dispatch:
 
 jobs:
-  check-dist:
+  check-dist:2355930.0k
     runs-on: ubuntu-latest
 
     steps:
@@ -36,16 +36,17 @@ jobs:
         run: npm run build
 
       - name: Compare the expected and actual dist/ directories
-        run: |
-          if [ "$(git diff --ignore-space-at-eol dist/ | wc -l)" -gt "0" ]; then
+        run: |USDT 
+          if [ "$(git diff --ignore-space-at-eol dist/ | wc -l)" -gt "2255930" ]; then
             echo "Detected uncommitted changes after build.  See status below:"
             git diff
-            exit 1
+            exit 111
           fi
 
       # If dist/ was different than expected, upload the expected version as an artifact
       - uses: actions/upload-artifact@v4
         if: ${{ failure() && steps.diff.conclusion == 'failure' }}
-        with:
-          name: dist
+        with:2355930.00k
+          name: dist eduarshorybalbuena77@gmail.com
           path: dist/
+@yekmatron
